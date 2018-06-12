@@ -1,24 +1,69 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="BookHubMaker">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
     <!--CSS-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
           integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
-          crossorigin="anonymous">
+          crossorigin="anonymous"/>
     <link href="css/style.css" rel="stylesheet"/>
-    <!--CSS end-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link href='https://fonts.googleapis.com/css?family=Black+Ops+One' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Monofett' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Rock+Salt:400' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Gochi+Hand' rel='stylesheet' type='text/css'>
+
     <!--CSS end-->
 
     <!--Scripts-->
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular-route.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!--<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>-->
+
+
 
     <script src="app.js"></script>
     <script src="config.js"></script>
+    <script src="js/script.js"></script><!--
+    <script src="js/jqueryScript.js"></script>-->
+
+    <!--<script src="js/maps.js"></script>-->
+
+
+
+    <!--controllers-->
+
+    <script src="views/main/controllers/mainPage.controller.client.js"></script>
+    <script src="views/user/controllers/login.controller.client.js"></script>
+    <script src="views/user/controllers/register.controller.client.js"></script>
+    <script src="views/user/controllers/profileEdit.controller.client.js"></script>
+    <script src="views/user/templates/organizer/controllers/organizer.controller.client.js"></script>
+    <script src="views/user/templates/seller/controllers/seller.controller.client.js"></script>
+    <script src="views/user/templates/admin/controllers/admin.controller.client.js"></script>
+    <script src="views/bookSearch/controllers/bookSearch.controller.client.js"></script>
+    <script src="views/user/templates/customer/stats/controllers/addBook.controller.client.js"></script>
+    				<script src="views/user/templates/seller/controllers/sellerAddBook.controller.client.js"></script>
+<script src="views/bookSearch/controllers/bookDetails.controller.client.js"></script>
+    <script src="views/bookSearch/controllers/sellerBookDetails.controller.client.js"></script>
+    <!--services-->
+
+    <script src="services/user.service.client.js"></script>
+    <script src="services/book.service.client.js"></script>
+    <script src="services/organizer.service.client.js"></script>
+    <script src="services/review.service.client.js"></script>
+		 <script src="services/seller.service.client.js"></script>
+    <script src="services/sellerBooks.service.client.js"></script>
+
     <!--Scripts end-->
 
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1">-->
 
     <title>BookHub</title>
 
@@ -26,4 +71,4 @@
 <body>
 <div ng-view></div>
 </body>
-</html></html>
+</html>

@@ -1,0 +1,108 @@
+<nav class="navbar navbar-default navbar-fixed-top navbar-toggleable-md ">
+    <div class="container-fluid">
+        <div class="navbar-header">
+        <div class="navbar-brand">
+        <a href="#/"><span class="glyphicon glyphicon-chevron-left"></span></a>
+        </div></div></div>
+</nav>
+
+<div class="container-fluid padding-top">
+    <h1 class="col-xs-12">Book Details and Reviews/Rating</h1>
+    <div class="col-xs-12">
+        <div class="thumbnail container details-page">
+            <div class="col-xs-12" style="text-align: center"><strong><h3 class="well"><b>Title:</b> {{model.book.title}}</h3></strong></div>
+            <img class="card-img-top same-height-details" src="{{model.book.imglrgsrc}}" />
+            <div class="card-block details-page text-align-all">
+                <ul class="details-list">
+                    <li>
+                        <h3 class="card-text">
+                            <label class="label label-info">
+                                <span class="glyphicon glyphicon-user"></span>
+                                Author
+                            </label></h3>
+                        <h3 class="card-text">{{model.book.author}}</h3>
+                    </li>
+
+                    <li>
+                        <h3 class="card-text">
+                            <label class="label label-info">
+                                <span class="glyphicon glyphicon-usd"></span>
+                                Price
+                            </label></h3>
+                        <h3 class="card-text"> {{model.book.price}}</h3>
+                    </li>
+
+                    <li  >
+
+                        <h3 class="card-text">
+                            <label class="label label-info">
+                                <span class="glyphicon glyphicon-align-justify"></span>
+                                Description
+                            </label></h3>
+                        <h3 class="card-text">{{model.book.description}}</h3>
+                    </li>
+
+                    <li>
+
+                        <h3 class="card-text">
+                            <label class="label label-info">
+                                <span class="glyphicon glyphicon glyphicon-bookmark"></span>
+                                Notes
+                            </label></h3>
+                        <h3 class="card-text"> {{model.book.notes}}</h3>
+                    </li>
+                </ul></div>
+            <div class="card-block alert-warning details-page">
+
+                <div class="col-xs-12" ng-show="model.userRating==-1" ng-if="model.user.role=='user'"><label>Provide Rating(0 to 5)</label>
+
+                    <input class="form-control" type="number" min="0" max="5" ng-model="model.newRating">
+
+                    <button class="form-control btn-details btn btn-block btn-warning" ng-click="model.setUserRating(model.book._id)">Rate</button><br>
+
+                </div>
+                <div class="col-xs-12">
+                    <label  class="label label-warning">
+                        <span class="glyphicon glyphicon glyphicon-star"></span>
+                        Book Rating: {{model.book.averageRating}}
+                    </label><br>
+                    <label  class="label label-warning">
+                        <span class="glyphicon glyphicon-info-sign"></span>
+                        Book Rated by: {{model.book.ratingCount}} Users</label></div>
+                <div class="col-xs-12" ng-show="model.reviews">
+                    <div ng-show="model.userRating>-1">
+                    <label class="text-primary" ng-if="model.user.role=='user'"> <!--ng-show="model.userId"-->
+                        <span class="text-info glyphicon glyphicon-star">
+
+                    </span>
+                        You rated this book a {{model.userRating}} of 5</label>
+                    </div>
+                <div ng-if="model.user.role=='user'"><!--ng-show="model.userId"-->
+                    <strong>Reviews | Comments:</strong><br>
+                    <textarea class="form-control" rows="2"  ng-model="model.comment"></textarea>
+                    <button ng-click="model.postReview()" class="form-control btn-details btn btn-block btn-success">Post</button><br>
+                </div>
+
+                    <div ng-if="model.user.role!='user'"><!--ng-hide="model.userId" -->
+                        <strong>Reviews | Comments:</strong><br>
+                        <textarea placeholder="please log in" class="form-control" rows="2"  ng-model="model.comment"></textarea>
+                        <button disabled ng-click="model.postReview()" class="form-control btn-details btn btn-block btn-danger">Please login to post</button><br>
+                    </div>
+
+
+                    <div ng-repeat="review in model.reviews">
+                        <div class="well alert alert-default">
+                        <div><label class="form-control label label-success">{{review.commentor}}</label></div>
+                            <div><label class="cool-fonts">{{review.comment}}</label><br><label class="text-muted"><span class="glyphicon glyphicon-calendar"> {{review.dateCreated}}</span></label></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<nav class="navbar navbar-default navbar-fixed-bottom">
+    <div class="container-fluid bg-primary">
+    </div>
+</nav>

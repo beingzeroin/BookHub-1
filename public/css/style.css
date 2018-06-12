@@ -1,0 +1,535 @@
+div.input-group {
+    margin-bottom: 5px;
+}
+html,body{
+    height:100%;
+    width:100%
+}
+body {
+    padding-top: 52px;
+    padding-bottom: 60px;
+    /*background-image: url("../images/konyvek21.png");*/
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 680px;
+}
+
+.navbar-default .navbar-brand {
+    color: navy;
+}
+.navbar-default .navbar-text {
+    color: navy;
+}
+
+.navbar-default .navbar-logreg {
+    color: white;
+}
+
+.navbar-default .navbar-brand:hover {
+    color: navy;
+    background-color: transparent;
+}
+
+.border{
+    border: 1px solid blue;
+}
+.listing-image{
+    max-width: 100%;
+    height: auto;
+}
+
+.p-word-wrap{
+    word-wrap: break-word;
+}
+
+/*.borderimg {*/
+    /*-webkit-border-image: url(border.png) 30 round; !* Safari 3.1-5 *!*/
+    /*-o-border-image: url(border.png) 30 round; !* Opera 11-12.1 *!*/
+    /*border-image: url(border.png) 30 round;*/
+/*}*/
+
+.banner{
+    max-width: 100%;
+    height: auto;
+}
+
+/*Main Page Dropdown css starts*/
+
+/* Dropdown Button */
+.dropbtn {
+    background-color: lightsalmon;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+/* Dropdown button on hover & focus */
+.dropbtn:hover, .dropbtn:focus {
+    background-color: darkorange;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    right:0;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {display:block;}
+
+/* Main Page Dropdown code ends*/
+
+/*main Page search css*/
+.search {
+    width: 60%;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    /*font-size: 16px;*/
+    background-color: white;
+    background-image: url('../images/icons/searchIcon.svg');
+    background-position: 0px -2px;
+    background-size: 25px 25px;
+    background-repeat: no-repeat;
+    padding: 0px 0px 0px 25px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+
+.search:focus {
+    width: 80%;
+}
+
+.img-thumbnail{
+    height: 100px;
+    width: 100px;
+}
+
+.divTransparent{
+    background-color: rgba(0,0,0,0);
+}
+
+input::-webkit-input-placeholder {
+    color: black !important;
+}
+
+h1 {
+    color: darkslategray;
+}
+
+img.same-height{
+    display: block;
+    max-width: 100%;
+    height:30em;
+    width:100%;
+}
+.card-block.same-height{
+    height:5em;
+}
+
+/*main page search css ends*/
+.navbar-color{
+    background-color: dimgray;
+}
+
+.padding-top{
+    padding-top: 5%;
+}
+
+.text-color{
+    color: navy;
+}
+
+
+input::-moz-placeholder{
+    color:black;
+    opacity: 1;
+}
+.label-color{
+    color: black;
+}
+/*main page search css ends*/
+
+#delete-glyphicon{
+    color:red;
+}
+
+.btn-white{
+    background-color:white;
+}
+a.btn-white:hover{
+    background-color:red;
+}
+a.btn-white:hover > span#delete-glyphicon{
+    color:white;
+}
+#edit-glyphicon {
+    color: navy;
+}
+.btn-white-edit{
+    background-color:white;
+}
+a.btn-white-edit:hover{
+    background-color:navy;
+}
+a.btn-white-edit:hover > span#edit-glyphicon{
+    color:white;
+}
+
+     /* Always set the map height explicitly to define the size of the div
+      * element that contains the map. */
+ #map {
+     height: 100%;
+ }
+/* Optional: Makes the sample page fill the window. */
+/*html, body {*/
+/*height: 100%;*/
+/*margin: 0;*/
+/*padding: 0;*/
+/*}*/
+#description {
+    /*font-family: "Times New Roman";*!*/
+    /*font-size: 15px;*/
+    /*font-weight: 300;*/
+}
+
+#infowindow-content .title {
+    font-weight: bold;
+}
+
+#infowindow-content {
+    display: none;
+}
+
+#map #infowindow-content {
+    display: inline;
+}
+
+.pac-card {
+    margin: 10px 10px 0 0;
+    border-radius: 2px 0 0 2px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    outline: none;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+    background-color: #fff;
+    font-family: "Times New Roman";
+}
+
+#pac-container {
+    padding-bottom: 12px;
+    margin-right: 12px;
+}
+
+.pac-controls {
+    display: inline-block;
+    padding: 5px 11px;
+}
+
+.pac-controls label {
+    /*font-family: "Times New Roman";*/
+    /*font-size: 13px;*/
+    /*font-weight: 300;*/
+}
+
+#pac-input {
+    /*background-color: #fff;*/
+    /*color: black;*/
+    /*font-family: "Times New Roman";*/
+    font-size: 14px;
+    /*font-weight: 300;*/
+    margin-left: 0px;
+    /*padding: 0 11px 0 13px;*/
+    /*text-overflow: ellipsis;*/
+    width: 100%;
+    background-color: transparent;
+}
+
+#pac-input:focus {
+    border-color: #4d90fe;
+}
+
+#title {
+    color: #fff;
+    background-color: #4d90fe;
+    font-size: 25px;
+    font-weight: 500;
+    padding: 6px 12px;
+}
+#target {
+    width: 345px;
+}
+.blurred-back{
+    margin: 100px auto;
+    position: relative;
+    padding: 10px 5px;
+    background: hsla(0,90%,100%,0.9);
+    font-size: 20px;
+    font-family: 'Lora', serif;
+    line-height: 1.5;
+    border-radius: 10px;
+    width: 80%;
+    box-shadow: 5px 3px 30px black;
+    overflow: hidden;
+    color:black;
+}
+
+.blurred-back::before{
+
+    content: '';
+    margin: -35px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    -webkit-filter :blur(20px);
+    filter: blur(20px);
+    z-index: -1;
+
+
+}
+.btn-style-create{
+
+    -webkit-filter: drop-shadow(4px 4px 3px darkcyan); /* Safari */
+    filter: drop-shadow(4px 4px 3px dark);
+}
+
+
+/*addBook Page Css*/
+.searchInputWidth{
+    width:145px;
+}
+/*addBook Page Css end*/
+
+.container-fluid.jumbotron{
+    background-image: url("http://cdn.wallpapersafari.com/77/28/hfG6Nk.jpg");
+    -webkit-background-size:cover;
+    background-size:cover;
+    background-repeat: no-repeat;
+    width:100%;
+    height:900px;
+    background-attachment: fixed;
+    background-position: center center;
+}
+@media only screen and (max-width: 720px) {
+    .container-fluid.jumbotron{
+        background-size: cover;
+        height: 700px;
+        background-image-x:-200px;
+
+    }
+    }
+
+
+.navbar-brand.app-name{
+    color:black;
+}
+.navbar-brand.app-name:hover {
+    color:blue;
+    text-decoration: none;
+}
+a{
+    text-decoration: none;
+}
+.container.mob-view{
+    margin-bottom: 60px;
+}
+.container-fluid.desk-view{
+    margin-bottom: 40px;
+}
+div#slider {
+    max-width: 100%;
+}
+div#slider figure {
+    position: relative;
+    width: 500%;
+    margin: 0;
+    padding: 0;
+    font-size: 0;
+    text-align: left;
+}
+div#slider figure img {
+    width: 20%;
+    height: auto;
+    float: left;
+}
+@media  only screen and (min-width:700px){
+    div#slider figure img {
+        height: 800px;}
+}
+@keyframes slidy {
+    0%  { left: 0%; }
+    20% { left: 0%; }
+    25% { left: -100%; }
+    45% { left: -100%; }
+    50% { left: -200%; }
+    70% { left: -200%; }
+    75% { left: -300%; }
+    95% { left: -300%; }
+    100% { left: -400%; }
+}
+div#slider figure {
+    position: relative;
+    width: 500%;
+    margin: 0;
+    padding: 0;
+    font-size: 0;
+    left: 0;
+    text-align: left;
+    animation: 30s slidy infinite;
+}
+.margin-fix{
+    margin-bottom: 60px;
+}
+img.same-height-books{
+    display: block;
+    max-width: 100%;
+    height:40em;
+}
+.card-block.same-height-books{
+    height:15em;
+}
+.card-block.height-fix{
+    margin-top:50px;
+}
+.card-block.same-height-books-shared{
+    height:17em;
+}
+.card-block.same-height-books-requested{
+    height: auto;
+    margin-bottom: 50px;
+}
+.card-block.same-height-books-requests{
+    height: auto;
+    margin-bottom: 100px;
+}
+
+.badge{
+    background-color:red;
+}
+.card-block.height-fix-requested{
+    height: auto;
+    margin-bottom: 50px;
+}
+.thumbnail{
+    margin-top: 70px;
+}
+
+.panel-edit{
+    margin:2px;
+    height:auto;
+    text-justify: inter-word;
+}
+div .events-css{
+    margin-bottom: 50px;
+    margin-top: 120px;
+}
+div.eve-css{
+    padding: 5px;
+}
+#searchForm {
+    position:absolute;
+    top:30%;
+}
+.margin-fix-main{
+    margin-top: 20px;
+}
+.margin-fix-main > strong{
+    margin-top: 5px;
+}
+.main-page-div {
+    margin-bottom: 50px
+}
+.font-brand{
+    font-family: 'Rock Salt', cursive;
+}
+
+.font-size-header {
+    position:absolute;
+    top:15%;
+    text-align: center;
+}
+h1.font-color-header{
+    font-family: 'Rock Salt', cursive;
+    color:white;
+    font-size: 60px;
+}
+img.same-height-details{
+    display: block;
+    max-width: 50%;
+    height:40em;
+    width:50%;
+}
+.details-page{
+    margin-top: 15px;
+    margin-bottom: 50px;
+}
+.details-list{
+    text-justify: inter-word;
+    margin:0px;
+    list-style: none;
+    margin-left:-0.5rem;
+    margin-right:1rem;
+}
+.details-list > li{
+
+}
+.btn-details{
+    margin-top:5px;
+}
+.cool-fonts{
+    font-family: 'Gochi Hand', cursive;
+    font-size:20px;
+}
+
+.text-align-all {
+    text-justify: inter-word;
+    text-align: justify;
+}
+div.custom{
+    height: 42em;
+}
+div.scroller{
+    height:50px;
+    overflow-y:scroll;
+}
+div.margin-bot-fix{
+    margin-bottom:20px;
+}
+
+.admin-desk {
+    margin-bottom: 55px;
+}
+.list-group {
+    margin-bottom: 55px;
+}
+
+
+div.scroller-admin {
+    max-height: 44em;
+    overflow-y: scroll;
+    height: auto;
+}
